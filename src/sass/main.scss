@@ -5,3 +5,15 @@
 
 // Стили для файла с примером HTML-фрагмента
 @import './base/normalize';
+
+// Утіліти
+@import './utils/placeholders';
+@import './utils/variables';
+
+// База
+@import './base/normalize';
+@import './base/base-selectors';
+@import './base/container';
+
+// Новости
+@import "./news/news";
