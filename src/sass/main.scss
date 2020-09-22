@@ -1,7 +1,11 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
 @import './base/normalize';
+//variables
+@import './utils/variables';
+// placeholders
+@import './utils/placeholders';
+// base selectors
+@import './base/base-selectors';
+// container
+@import './base/container';
+// profile
+@import './components/profile';

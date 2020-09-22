@@ -1,0 +1,211 @@
+<section class="profile">
+  <div class="container">
+    <h2 class="portfolio-title">Profile</h2>
+    <div class="wrap-grid">
+      <div class="flex-wrap">
+        <div class="wrapper-photo">
+          <div class="wrap-img">
+            <img
+              srcset="
+                ./images/avatar-m.jpg           320w,
+                ./images/avatar-m@2x.jpg        640w,
+                ./images/avatar-desktop.jpg    1240w,
+                ./images/avatar-desktop@2x.jpg 2480w
+              "
+              src="./images/avatar-m.jpg"
+              alt="avatar"
+              class="photo"
+            />
+          </div>
+          <label class="input-photo">
+            + Upload new photo
+            <input type="file" class="visually-hidden" />
+          </label>
+        </div>
+
+        <div class="social-media">
+          <h3 class="social-title">Social media</h3>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="" class="social-link">
+                <div class="wrap-icon">
+                  <svg width="15" height="15" class="social-icon">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+                <span>Facebook</span>
+                <div class="wrap-plus">
+                  <svg width="10" height="10" class="social-plus">
+                    <use href="./images/sprite.svg#icon-plus"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="" class="social-link">
+                <div class="wrap-icon twitter">
+                  <svg width="15" height="15" class="social-icon">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+                <span>Twitter</span>
+                <div class="wrap-svg">
+                  <div class="wrap-plus accent">
+                    <svg width="10" height="10" class="social-plus">
+                      <use href="./images/sprite.svg#icon-accept"></use>
+                    </svg>
+                  </div>
+                  <div class="wrap-plus burger">
+                    <svg width="10" height="10" class="social-plus">
+                      <use href="./images/sprite.svg#icon-circles"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="" class="social-link">
+                <div class="wrap-icon vk">
+                  <svg width="15" height="15" class="social-icon">
+                    <use href="./images/sprite.svg#icon-vk"></use>
+                  </svg>
+                </div>
+                <span>VKontakte</span>
+                <div class="wrap-svg">
+                  <div class="wrap-plus accent">
+                    <svg width="10" height="10" class="social-plus">
+                      <use href="./images/sprite.svg#icon-accept"></use>
+                    </svg>
+                  </div>
+                  <div class="wrap-plus burger">
+                    <svg width="10" height="10" class="social-plus">
+                      <use href="./images/sprite.svg#icon-circles"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="form">
+        <div class="user-links">
+          <label class="form-field">
+            <div class="label">Dribbble link</div>
+            <input
+              type="text"
+              name="user-link"
+              class="user-input"
+              placeholder="https://dribbble.com/user-name"
+            />
+          </label>
+          <label class="form-field">
+            <div class="label">Behance link</div>
+            <input
+              type="text"
+              name="user-link"
+              class="user-input mb"
+              placeholder="https://www.behance.net/user-name"
+            />
+          </label>
+          <label class="form-field">
+            <div class="label">E-Mail</div>
+            <input
+              type="mail"
+              name="email"
+              placeholder="user-name@gmail.com"
+              class="user-input"
+            />
+          </label>
+        </div>
+
+        <div class="user-passwords">
+          <h3 class="title-form">Password management</h3>
+          <label class="form-field">
+            <div class="label">Primary password</div>
+            <input
+              type="password"
+              name="password"
+              class="user-input"
+              placeholder="**********************"
+            />
+          </label>
+
+          <label class="form-field">
+            <div class="label">New password</div>
+            <input
+              type="password"
+              name="password"
+              class="user-input"
+              placeholder="**********************"
+            />
+          </label>
+
+          <label class="form-field">
+            <div class="label">Confirm new password</div>
+            <input
+              type="password"
+              name="password"
+              class="user-input"
+              placeholder="**********************"
+            />
+          </label>
+        </div>
+        <button type="submit" class="button-form">Save changes</button>
+      </form>
+
+      <div class="wrap-statistic">
+        <h3 class="title-form">Personal Statistic</h3>
+        <ul class="statistic-list">
+          <li class="statistic-item">
+            <div class="wrapper-icon">
+              <svg width="19" height="19" class="icon-statistic">
+                <use href="./images/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+            <div class="wrap-info">
+              <p class="info-number">2 562</p>
+              <p class="info-text">Likes delivered for all time</p>
+            </div>
+          </li>
+          <li class="statistic-item">
+            <div class="wrapper-icon purple">
+              <svg width="19" height="19" class="icon-statistic purple">
+                <use href="./images/sprite.svg#icon-person-add"></use>
+              </svg>
+            </div>
+            <div class="wrap-info">
+              <p class="info-number">15</p>
+              <p class="info-text">New users invited</p>
+            </div>
+          </li>
+          <li class="statistic-item">
+            <div class="wrapper-icon green">
+              <svg width="19" height="19" class="icon-statistic green">
+                <use href="./images/sprite.svg#icon-calendar"></use>
+              </svg>
+            </div>
+            <div class="wrap-info">
+              <p class="info-number">329</p>
+              <p class="info-text">Days since registration</p>
+            </div>
+          </li>
+          <li class="statistic-item">
+            <div class="wrapper-icon dollar">
+              <svg width="19" height="19" class="icon-statistic">
+                <use href="./images/sprite.svg#icon-dollar"></use>
+              </svg>
+            </div>
+            <div class="wrap-info">
+              <p class="info-number">$ 1456,23</p>
+              <p class="info-text">Real money spent</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

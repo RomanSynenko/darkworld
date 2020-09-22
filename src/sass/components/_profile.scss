@@ -1,0 +1,421 @@
+.profile {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 1240px) {
+    padding-top: 55px;
+    padding-bottom: 80px;
+  }
+
+  .wrap-grid {
+    @media screen and (min-width: 1240px) {
+      display: grid;
+      grid-template-columns: 290px 430px 340px;
+      grid-column-gap: 80px;
+    }
+  }
+
+  .flex-wrap {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
+
+  .portfolio-title {
+    font-size: 22px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
+    @media screen and (min-width: 1240px) {
+      font-size: 26px;
+      line-height: 1;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.wrapper-photo {
+  width: 165px;
+  height: 215px;
+  padding: 10px;
+  margin-right: 10px;
+
+  background: $bg-items;
+  border-radius: 15px;
+
+  @media screen and (min-width: 1240px) {
+    width: 290px;
+    height: 360px;
+    padding: 20px;
+    margin-bottom: 49px;
+  }
+
+  .wrap-img {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1240px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .visually-hidden {
+    @extend %visually-hidden;
+  }
+
+  .input-photo {
+    margin: 0;
+
+    padding: 12px 15px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+
+    border: 1px solid $bg-empty;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    @media screen and (min-width: 1240px) {
+      font-size: $font-size;
+      line-height: 1.25;
+      padding: 15px 49px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent;
+    }
+  }
+}
+
+.social-media {
+  width: 170px;
+
+  @media screen and (min-width: 1240px) {
+    width: 290px;
+  }
+
+  .social-title {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+
+    color: $second-text;
+
+    @media screen and (min-width: 1240px) {
+      font-size: 14px;
+      line-height: 1.42;
+    }
+  }
+}
+
+.social-list {
+  @extend %list;
+
+  .social-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+
+      @media screen and (min-width: 1240px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: 1240px) {
+      font-size: $font-size;
+      line-height: $line-height;
+    }
+  }
+
+  .social-link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: $bg-items;
+    border-radius: 12px;
+    color: $text;
+  }
+
+  .wrap-icon {
+    @extend %centered-flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background: $bg-facebook;
+
+    @media screen and (min-width: 1240px) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &.twitter {
+      background: $bg-twitter;
+    }
+
+    &.vk {
+      background: $bg-vk;
+    }
+  }
+
+  .social-icon {
+    @media screen and (min-width: 1240px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .social-plus {
+    width: 14px;
+    height: 14px;
+  }
+
+  .wrap-plus {
+    @extend %centered-flex;
+    margin-left: auto;
+    width: 14px;
+    height: 14px;
+    background: $accent;
+    border-radius: 50%;
+
+    @media screen and (min-width: 1240px) {
+      width: 20px;
+      height: 20px;
+    }
+
+    &.accent {
+      background: $bg-accent;
+      margin-right: 10px;
+    }
+
+    &.burger {
+      fill: $bg-grey;
+      background: transparent;
+    }
+  }
+
+  .wrap-svg {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.profile {
+  .form {
+    margin-bottom: 60px;
+  }
+}
+
+.profile {
+  .form-field {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+
+    color: $second-text;
+
+    @media screen and (min-width: 1240px) {
+      font-size: 14px;
+      line-height: 1.42;
+    }
+  }
+
+  .label {
+    margin-bottom: 10px;
+  }
+
+  .user-input {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+
+    border: 0;
+    border-radius: 15px;
+    background: $bg-empty;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @media screen and (min-width: 1240px) {
+      font-size: $font-size;
+      line-height: $line-height;
+      margin-bottom: 20px;
+
+      &.mb {
+        margin-bottom: 40px;
+      }
+    }
+
+    &:focus-within {
+      border: 1px solid $accent;
+      outline: 0;
+      color: $text;
+    }
+
+    &:not(:placeholder-shown) {
+      border: 1px solid $accent;
+      color: $text;
+    }
+  }
+
+  ::placeholder {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: $text;
+  }
+}
+
+.user-links {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 40px;
+  }
+}
+
+.user-passwords {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 40px;
+  }
+}
+
+.title-form {
+  margin: 0 0 10px 0;
+
+  padding: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  color: $second-text;
+
+  @media screen and (min-width: 1240px) {
+    font-size: 14px;
+    line-height: 1.42;
+  }
+}
+
+.profile {
+  .button-form {
+    margin: 0;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 15px;
+    border: 1px solid $accent;
+    background: transparent;
+    color: $text;
+    cursor: pointer;
+
+    &:hover {
+      background: $accent;
+    }
+  }
+}
+
+.statistic-list {
+  @extend %list;
+
+  .statistic-item {
+    display: flex;
+    padding: 20px;
+    border-radius: 15px;
+    background: $bg-items;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @media screen and (min-width: 1240px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .wrapper-icon {
+      @extend %centered-flex;
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      background: $pink;
+      border-radius: 10px;
+
+      @media screen and (min-width: 1240px) {
+        width: 50px;
+        height: 50px;
+      }
+
+      &.purple {
+        background: $bg-purple;
+      }
+
+      &.green {
+        background: $bg-green;
+      }
+
+      &.dollar {
+        background: $bg-dollar;
+      }
+
+      .icon-statistic {
+        fill: $red;
+
+        @media screen and (min-width: 1240px) {
+          width: 24px;
+          height: 24px;
+        }
+
+        &.purple {
+          fill: $purple;
+        }
+
+        &.green {
+          fill: $bg-accent;
+        }
+      }
+    }
+  }
+}
+
+.wrap-info {
+  .info-number {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.11;
+
+    @media screen and (min-width: 1240px) {
+      font-size: 24px;
+      line-height: 1;
+    }
+  }
+
+  .info-text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: $second-text;
+
+    @media screen and (min-width: 1240px) {
+      font-size: $font-size;
+      line-height: $line-height;
+    }
+  }
+}
