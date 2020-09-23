@@ -174,11 +174,23 @@
   }
 }
 
-.money {
+.list-money {
+  @extend %list;
   margin-bottom: 30px;
 
   @media screen and (min-width: 1240px) {
+    display: flex;
     margin-bottom: 40px;
+  }
+
+  .list-money {
+    @media screen and (min-width: 1240px) {
+      flex-direction: column;
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-right: 100px;
+      }
+    }
   }
 }
 
@@ -190,6 +202,12 @@
 
   background: $bg-empty;
   border-radius: 15px;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 0;
+    padding: 15px 20px;
+    max-width: 92px;
+  }
 
   .icon-money {
     width: 16px;
@@ -218,11 +236,17 @@
   }
 }
 
+.size-81 {
+  @media screen and (min-width: 1240px) {
+    max-width: 81px;
+  }
+}
+
 .field-last {
   display: flex;
   align-items: center;
   max-width: 60px;
-  padding: 16px 20px;
+  padding: 15px 20px;
 
   background-color: $bg-empty;
   border-radius: 15px;
