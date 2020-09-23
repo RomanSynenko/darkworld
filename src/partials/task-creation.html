@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="task-creation">
+      <div class="container pd-30">
+        <h1 class="title-creation">Task creation</h1>
+        <b class="subtitle">Select a social network</b>
+        <div class="social-network">
+          <label class="field-creation">
+            <svg class="icon-dribble" width="30px" height="30px">
+              <use href="./images/sprite.svg#icon-dribble"></use>
+            </svg>
+            <p class="text">Dribbble</p>
+            <input class="checkbox" type="radio" name="social-network" />
+            <span class="new-checkbox"></span>
+          </label>
+
+          <label class="field-creation">
+            <svg class="icon-dribble" width="30px" height="30px">
+              <use href="./images/sprite.svg#icon-behance"></use>
+            </svg>
+            <p class="text">Behance</p>
+            <input class="checkbox" type="radio" name="social-network" />
+            <span class="new-checkbox"></span>
+          </label>
+        </div>
+        <h2 class="subtitle">Task type</h2>
+        <div class="task-type">
+          <label class="field-creation">
+            <svg class="icon-dribble" width="30px" height="30px">
+              <use href="./images/sprite.svg#icon-like"></use>
+            </svg>
+            <p class="text">Likes</p>
+            <input class="checkbox" type="checkbox" name="task-type" />
+            <span class="new-checkbox"></span>
+          </label>
+          <label class="field-creation">
+            <svg class="icon-dribble" width="30px" height="30px">
+              <use href="./images/sprite.svg#icon-followers"></use>
+            </svg>
+            <p class="text">Followers</p>
+            <input class="checkbox" type="checkbox" name="task-type" />
+            <span class="new-checkbox"></span>
+          </label>
+          <label class="field-creation">
+            <svg class="icon-dribble" width="30px" height="30px">
+              <use href="./images/sprite.svg#icon-comments"></use>
+            </svg>
+            <p class="text">Comments</p>
+            <input class="checkbox" type="checkbox" name="task-type" />
+            <span class="new-checkbox"></span>
+          </label>
+          <label class="field-creation">
+            <svg class="icon-dribble" width="30px" height="30px">
+              <use href="./images/sprite.svg#icon-views"></use>
+            </svg>
+            <p class="text">Views</p>
+            <input class="checkbox" type="checkbox" name="task-type" />
+            <span class="new-checkbox"></span>
+          </label>
+        </div>
+        <h2 class="subtitle">
+          Project link
+          <span class="mini-title">
+            For example https://dribbble.com/shots/Example-Name
+          </span>
+        </h2>
+        <input
+          class="mail-link"
+          type="email"
+          name="email"
+          placeholder="https://dribbble.com/shots/13967318-Dribbble-Pr..."
+        />
+
+        <div class="money">
+          <h2 class="subtitle">
+            Execution cost
+            <span class="mini-title">
+              At least 20 coins for execution (50% site commission)
+            </span>
+          </h2>
+          <div class="mini-field">
+            <svg class="icon-money">
+              <use href="./images/sprite.svg#icon-coins"></use>
+            </svg>
+            <p class="numbers">30</p>
+          </div>
+
+          <h2 class="subtitle">How much do you need?</h2>
+          <div class="mini-field">
+            <svg class="icon-money">
+              <use href="./images/sprite.svg#icon-flash"></use>
+            </svg>
+            <p class="numbers">1000</p>
+          </div>
+          <h2 class="subtitle">
+            Pin my task to the top
+            <span class="mini-title">
+              Additional cost is charged - 500 coins
+            </span>
+          </h2>
+          <label class="field-last">
+            <input class="checkbox" type="checkbox" />
+            <span class="new-checkbox new-border"></span>
+          </label>
+        </div>
+
+        <button class="btn-creation" type="submit">Create task</button>
+      </div>
+    </section>
+  </body>
+</html>

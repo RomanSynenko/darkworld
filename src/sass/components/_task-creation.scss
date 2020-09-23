@@ -1,0 +1,252 @@
+.task-creation {
+  background-color: $bg-section;
+}
+
+.pd-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.title-creation {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 0.77;
+
+  color: $text;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 35px;
+  }
+}
+
+.subtitle {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+
+  color: $second-text;
+
+  @media screen and (min-width: 1240px) {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .mini-title {
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+
+    font-weight: 400;
+  }
+}
+
+.social-network {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1240px) {
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+.field-creation {
+  display: flex;
+  align-items: center;
+  max-width: 345px;
+  padding: 10px;
+
+  background-color: $bg-items;
+  border-radius: 12px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1240px) {
+    padding: 15px;
+    width: 290px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+
+  .text {
+    margin: 0;
+    margin-left: 10px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+
+    color: $text;
+
+    @media screen and (min-width: 1240px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.new-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+
+  border-radius: 50%;
+  border: 2px solid $bg-empty;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 1240px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.checkbox:checked + .new-checkbox {
+  background-image: url('../images/svg/accept.svg');
+  background-size: contain;
+  border: 2px solid transparent;
+  background-origin: border-box;
+}
+
+.checkbox:focus + .new-checkbox {
+  border: 2px solid $accent;
+}
+
+.checkbox:checked:focus + .new-checkbox {
+  border: 2px solid transparent;
+}
+
+.task-type {
+  margin-bottom: 34px;
+
+  @media screen and (min-width: 1240px) {
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+.mail-link {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 30px;
+
+  color: $text;
+  background: #2d2d3a;
+  border-radius: 15px;
+  border: 0;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 40px;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: $text;
+
+    @media screen and (min-width: 1240px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.money {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1240px) {
+    margin-bottom: 40px;
+  }
+}
+
+.mini-field {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 10px;
+  margin-bottom: 30px;
+
+  background: $bg-empty;
+  border-radius: 15px;
+
+  .icon-money {
+    width: 16px;
+    height: 16px;
+
+    @media screen and (min-width: 1240px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .numbers {
+    margin: 0;
+    margin-left: 5px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+
+    color: $text;
+
+    @media screen and (min-width: 1240px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.field-last {
+  display: flex;
+  align-items: center;
+  max-width: 60px;
+  padding: 16px 20px;
+
+  background-color: $bg-empty;
+  border-radius: 15px;
+}
+
+.new-border {
+  border: 2px solid $bg-section;
+}
+
+.btn-creation {
+  padding: 15px 20px;
+
+  font-weight: 500;
+
+  color: $text;
+  background-color: transparent;
+  border: 2px solid $accent;
+  box-sizing: border-box;
+  border-radius: 15px;
+  transition: 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    border: 2px solid transparent;
+  }
+}
