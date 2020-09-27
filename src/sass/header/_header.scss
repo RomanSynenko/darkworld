@@ -1,0 +1,341 @@
+.centering {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: $bg-items;
+  @media screen and (min-width: $desctop) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.header-nav {
+  display: none;
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    margin-left: 265px;
+    margin-right: 240px;
+  }
+}
+
+.header-link-style {
+  text-decoration: none;
+  color: $second-text;
+  @media screen and (min-width: $desctop) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+.header-nav-item {
+  @media screen and (min-width: $desctop) {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.current {
+  color: $text;
+}
+
+.logo {
+  @extend %base-text-style;
+  color: $text;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+.logo-cont-svg {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: $accent;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.header-profile {
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 20px 0 20px 0;
+  }
+}
+
+.header-profile-link,
+.header-profile-button {
+  display: none;
+  @media screen and (min-width: $desctop) {
+    display: flex;
+  }
+}
+
+.logo-svg {
+  margin: 5px;
+}
+
+.header-coin-plus {
+  margin-right: 15px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: $accent;
+}
+
+.header-coin-plus-svg {
+  margin: 5px;
+  width: 12px;
+  height: 12px;
+}
+
+.header-coin {
+  width: 105px;
+  background-color: $bg-empty;
+  border-radius: 10px;
+  padding: 4px 17px 4px 5px;
+  margin-left: 64px;
+  @media screen and (min-width: $desctop) {
+    margin-left: 0;
+  }
+}
+
+.header-coin-counter {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $text;
+}
+
+.header-coin-svg {
+  display: flex;
+}
+
+.header-coin-balance {
+  margin-left: 7px;
+}
+
+.header-nav-items {
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-link-style {
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-nav-svg {
+  fill: currentColor;
+}
+
+.arrow {
+  display: none;
+
+  @media screen and (min-width: $desctop) {
+    display: block;
+    width: 24px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/svg/arrow.svg);
+    cursor: pointer;
+  }
+}
+
+.header-profile:hover .arrow,
+.header-profile:focus .arrow {
+  width: 24px;
+  height: 40px;
+  background-image: url(../images/svg/arrow-close.svg);
+}
+
+.header-profile:hover .header-menu-profile,
+.header-profile:focus .header-menu-profile {
+  display: block;
+}
+
+// Стилі вспливаючого меню
+.header-menu-profile {
+  display: none;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  width: 100%;
+  padding: 30px 15px 0 15px;
+  margin: 0;
+
+  @extend %base-text-style;
+
+  @media screen and (max-width: 1239px) {
+    // display: none;
+  }
+  @media screen and (min-width: $desctop) {
+    top: 74px;
+    right: 0;
+    background: $bg-items;
+    border: 2px solid $bg-empty;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 254px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+.menu-mobile {
+  display: none;
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 100%;
+  padding: 30px 15px 0 15px;
+  margin: 0;
+
+  &.is-open {
+    display: block;
+  }
+  @media screen and (min-width: $desctop) {
+    top: 74px;
+    right: 0;
+    padding: 22px 20px 22px 20px;
+    background: $bg-items;
+    border: 2px solid $bg-empty;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 254px;
+
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+.header-menu-profile-title {
+  @extend %text-style;
+  margin: 0;
+  padding: 0;
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
+}
+
+.header-menu-profile-link {
+  text-decoration: none;
+  color: $text;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-profile-items {
+  margin-top: 32px;
+
+  @media screen and (min-width: $desctop) {
+    margin-top: 0;
+  }
+}
+
+.header-menu-profile-item {
+  margin-top: 32px;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-top: 61px;
+    margin-bottom: 62px;
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 0;
+    }
+  }
+  &:nth-child(3) {
+    margin-top: 61px;
+  }
+}
+
+.psevdo-after {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    height: 1px;
+    background-color: $bg-empty;
+  }
+}
+
+.psevdo-before {
+  position: relative;
+  color: $red;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    height: 1px;
+    background-color: $bg-empty;
+  }
+}
+
+.switch {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 44px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: $bg-empty;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $accent;
+  }
+}
+
+.header-menu-profile-svg {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.signature {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #5f5f6f;
+  text-align: center;
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
+}
+
+.plug {
+  height: 83vh;
+}

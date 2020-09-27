@@ -25,3 +25,15 @@
   justify-content: center;
   align-items: center;
 }
+
+%base-text-style {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+%text-style {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 0.9;
+}

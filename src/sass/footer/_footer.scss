@@ -1,0 +1,217 @@
+.footer {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 36px;
+  background-color: $bg-items;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #5f5f6e;
+}
+
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1239px) {
+    display: none;
+  }
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  margin-right: 367px;
+}
+
+.footer-social-link {
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.foter-subscribe-signature {
+  margin-right: 291px;
+}
+
+.footer-nav {
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
+}
+
+.footer-nav-items {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -28px;
+    right: 97px;
+    width: 131px;
+    height: 5px;
+    border-radius: 100px;
+    background-color: $bg-footer-line;
+  }
+}
+
+.footer-nav-item {
+  margin-right: 65px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer-link-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2;
+  color: $second-text;
+}
+
+.footer-nav-svg {
+  fill: currentColor;
+  margin-bottom: 2px;
+}
+
+.menu-button {
+  width: 28px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2;
+  color: #5f5f6e;
+  cursor: pointer;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+}
+
+.button-icon {
+  margin-bottom: -4px;
+}
+
+// Стилі вспливаючого меню
+.foter-menu-profile {
+  //   display: none;
+  //   position: absolute;
+  //   top: -736px;
+  //   left: 0;
+  //   width: 100%;
+  //   padding: 30px 15px 0 15px;
+  //   margin: 0;
+
+  //   @extend %base-text-style;
+
+  //   &.is-open {
+  //     display: block;
+  //   }
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
+}
+
+.foter-menu-profile-title {
+  @extend %text-style;
+}
+
+.foter-menu-profile-link {
+  text-decoration: none;
+  color: $text;
+  display: flex;
+  align-items: center;
+}
+
+.foter-menu-profile-item {
+  margin-top: 32px;
+  &:last-child {
+    margin-top: 61px;
+    margin-bottom: 62px;
+  }
+  &:nth-child(3) {
+    margin-top: 61px;
+  }
+}
+
+.foter-psevdo-after {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    height: 1px;
+    background-color: $bg-empty;
+  }
+}
+
+.foter-psevdo-before {
+  position: relative;
+  color: $red;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    height: 1px;
+    background-color: $bg-empty;
+  }
+}
+
+.foter-switch {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 44px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: $bg-empty;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $accent;
+  }
+}
+
+.foter-menu-profile-svg {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.foter-signature {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #5f5f6f;
+  text-align: center;
+}

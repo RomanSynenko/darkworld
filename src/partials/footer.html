@@ -1,0 +1,103 @@
+<footer class="footer container">
+  <div class="footer-subscribe">
+    <ul class="footer-social-links">
+      <li class="footer-social-link">
+        <a href="">
+          <svg class="footer-twitter" width="23px" height="18px">
+            <use href="./images/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-link">
+        <a href="">
+          <svg class="footer-vk" width="28px" height="16px">
+            <use href="./images/sprite.svg#icon-vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-link">
+        <a href="">
+          <svg class="footer-telegram" width="20px" height="18px">
+            <use href="./images/sprite.svg#icon-telegram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <span class="foter-subscribe-signature">© 2020 - All Rights Lecensed</span>
+    <p>For commercial inquiries</p>
+  </div>
+
+  <nav class="footer-nav">
+    <ul class="footer-nav-items">
+      <li class="footer-nav-item">
+        <a class="footer-link-style" href="">
+          <svg class="footer-nav-svg" width="28px" height="28px">
+            <use href="./images/sprite.svg#icon-task-list"></use>
+          </svg>
+          <span class="foter-nav-element"> Task list </span>
+        </a>
+      </li>
+      <li class="footer-nav-item">
+        <a class="footer-link-style" href="">
+          <svg class="footer-nav-svg" width="28px" height="28px">
+            <use href="./images/sprite.svg#icon-news"></use>
+          </svg>
+          <span class="foter-nav-element"> News </span>
+        </a>
+      </li>
+      <li class="footer-nav-item">
+        <a class="footer-link-style" href="">
+          <svg class="footer-nav-svg" width="28px" height="28px">
+            <use href="./images/sprite.svg#icon-help"></use>
+          </svg>
+          <span class="foter-nav-element"> FAQ </span>
+        </a>
+      </li>
+      <li class="footer-nav-item">
+        <div class="footer-link-style">
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-mobile"
+            data-menu-button
+          >
+            <svg
+              class="button-icon"
+              width="28px"
+              height="28px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-burger-close"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-burger-menu"
+              ></use>
+            </svg>
+            <span class="foter-nav-element">Menu</span>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    (() => {
+      const menuBtnRef = document.querySelector('[data-menu-button]');
+      const mobileMenuRef = document.querySelector('[data-menu]');
+
+      menuBtnRef.addEventListener('click', () => {
+        const expanded =
+          menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+        menuBtnRef.classList.toggle('is-open');
+        menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+        mobileMenuRef.classList.toggle('is-open');
+      });
+    })();
+  </script>
+</footer>

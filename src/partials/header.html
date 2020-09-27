@@ -1,0 +1,133 @@
+<header class="container centering">
+  <a class="logo link-style" href="">
+    <div class="logo-cont-svg">
+      <svg class="logo-svg" width="20px" height="20px">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
+    </div>
+    <span>Pro-Promotion.com</span>
+  </a>
+  <nav class="header-nav">
+    <ul class="header-nav-items">
+      <li class="header-nav-item">
+        <a class="header-link-style current" href="">
+          <svg class="header-nav-svg" width="24px" height="24px">
+            <use href="./images/sprite.svg#icon-task-list"></use>
+          </svg>
+          <span> Task list </span>
+        </a>
+      </li>
+      <li class="header-nav-item">
+        <a class="header-link-style" href="">
+          <svg class="header-nav-svg" width="24px" height="24px">
+            <use href="./images/sprite.svg#icon-news"></use>
+          </svg>
+          <span> News </span>
+        </a>
+      </li>
+      <li class="header-nav-item">
+        <a class="header-link-style" href="">
+          <svg class="header-nav-svg" width="24px" height="24px">
+            <use href="./images/sprite.svg#icon-help"></use>
+          </svg>
+          <span> Help </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="header-coin">
+    <a class="header-coin-counter" href="">
+      <div class="header-coin-plus">
+        <svg class="header-coin-plus-svg" width="30px" height="30px">
+          <use href="./images/sprite.svg#icon-plus"></use>
+        </svg>
+      </div>
+      <div class="header-coin-svg">
+        <svg width="14px" height="14px">
+          <use href="./images/sprite.svg#icon-coins"></use>
+        </svg>
+      </div>
+      <span class="header-coin-balance"> 2023 </span>
+    </a>
+  </div>
+  <div>
+    <div class="header-profile">
+      <a class="header-profile-link" href="">
+        <picture>
+          <source
+            srcset="
+              ./images/header-profile@1x.webp 1x,
+              ./images/header-profile@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            class="header-img-profile"
+            srcset="
+              ./images/header-profile@1x.jpg 1x,
+              ./images/header-profile@2x.jpg 2x
+            "
+            src="./images/header-profile@1x.jpg"
+            alt="profile"
+          />
+        </picture>
+      </a>
+      <div class="arrow"></div>
+      <div class="menu-mobile header-menu-profile" id="menu-mobile" data-menu>
+        <p class="header-menu-profile-title">Menu</p>
+        <ul class="header-menu-profile-items">
+          <li class="header-menu-profile-item">
+            <a class="header-menu-profile-link" href="">
+              <svg class="header-menu-profile-svg" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+              My profile
+            </a>
+          </li>
+          <li class="header-menu-profile-item">
+            <a class="header-menu-profile-link psevdo-after" href="">
+              <svg class="header-menu-profile-svg" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-task-list"></use>
+              </svg>
+              Task history
+            </a>
+          </li>
+          <li class="header-menu-profile-item">
+            <a class="header-menu-profile-link switch" href="">
+              <svg class="header-menu-profile-svg" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-sun"></use>
+              </svg>
+              Dark mode
+            </a>
+          </li>
+          <li class="header-menu-profile-item">
+            <a class="header-menu-profile-link psevdo-before" href="">
+              <svg class="header-menu-profile-svg" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-log-out"></use>
+              </svg>
+              Log out
+            </a>
+          </li>
+        </ul>
+        <span class="signature">© 2020 - All Rights Lecensed</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const menuBtnRef = document.querySelector('[data-menu-button]');
+      const mobileMenuRef = document.querySelector('[data-menu]');
+
+      menuBtnRef.addEventListener('click', () => {
+        const expanded =
+          menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+        menuBtnRef.classList.toggle('is-open');
+        menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+        mobileMenuRef.classList.toggle('is-open');
+      });
+    })();
+  </script>
+</header>
+<div class="plug"></div>
