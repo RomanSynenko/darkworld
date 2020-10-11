@@ -1,0 +1,112 @@
+.task-list_item_logo_block_one {
+  position: relative;
+  @media screen and (max-width: 1239px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (min-width: 1240px){
+    width:50px;
+    height: 50px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: $bg-items url('../images/svg/one.svg') no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    background-size: 70%;
+    width: 10px;
+    height: 10px;
+    display: block;
+    right: 0;
+    bottom: 0;
+    @media screen and (min-width: 1240px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.task-list_item_logo_block_two {
+  position: relative;
+  @media screen and (max-width: 1239px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (min-width: 1240px){
+    width:50px;
+    height: 50px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: $bg-items url('../images/svg/two.svg') no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    background-size: 60%;
+    width: 10px;
+    height: 10px;
+    display: block;
+    right: 0;
+    bottom: 0;
+    @media screen and (min-width: 1240px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.task-list_item_logo_block_three {
+  position: relative;
+  @media screen and (max-width: 1239px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (min-width: 1240px){
+    width:50px;
+    height: 50px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: $bg-items url('../images/svg/three.svg') no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    background-size: 60%;
+    width: 10px;
+    height: 10px;
+    display: block;
+    right: 0;
+    bottom: 0;
+    @media screen and (min-width: 1240px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.task-list_item_logo_block_four {
+  position: relative;
+  @media screen and (max-width: 1239px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media screen and (min-width: 1240px){
+    width:50px;
+    height: 50px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: $bg-items url('../images/svg/four.svg') no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    background-size: 60%;
+    width: 10px;
+    height: 10px;
+    display: block;
+    right: 0;
+    bottom: 0;
+    @media screen and (min-width: 1240px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

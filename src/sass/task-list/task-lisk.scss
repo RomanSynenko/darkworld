@@ -1,0 +1,205 @@
+body {
+  margin: 0 auto;
+  color: $text;
+  background-color: $bg-section;
+}
+.displey-none {
+  @media screen and (max-width:1200px){
+    display: none;
+  }
+}
+.task-list-section {
+  position: relative;
+  overflow-x: hidden;
+  @media (min-width: 320px) and (max-width: 360px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+// create task section
+.task-list_title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.task-list_title_text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 42%;
+  @media (min-width: 320px) and (max-width: 361px) {
+    margin-right: 35%;
+  }
+  @media screen and (min-width:1240px){
+    margin-right: 986px;
+    font-size: 26px;
+  }
+}
+.task-list_create {
+  border: none;
+  color: $text;
+  background-color: $bg-empty;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  &:hover,
+  :focus {
+    background-color: $accent;
+  }
+  @media screen and (min-width:1240px){
+    font-size: 16px;
+    width: 132px;
+    height: 50px;
+
+  }
+}
+// task list section
+
+.task-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+  @media screen  and (min-width:1240px){
+    margin: -10px;
+  }
+}
+.task-list_item {
+  list-style: none;
+  background-color: $bg-items;
+  border-radius: 15px;
+  flex-basis: calc((100% - 4 * 5px) / 2);
+  margin: 5px;
+  flex-grow: 1;
+  padding: 15px 10px 15px 10px;
+  @media screen and (max-width: 322px) {
+    padding: 15px 2px 15px 2px;
+  }
+  @media screen and (max-width: 1239px) {
+    &:nth-last-of-type(-n + 2) {
+      margin: 5px 5px 0 5px;
+    }
+  }
+  @media screen and (min-width: 1240px) {
+    padding: 20px 20px 20px 20px;
+    margin: 10px;
+    flex-basis: calc((100% - 8 * 10px) / 4);
+    &:nth-last-of-type(-n + 4) {
+      margin: 10px 10px 0 10px;
+    }
+  }
+}
+.icon-Mask {
+  fill: $second-text;
+  width: 14px;
+  height: 14px;
+  @media screen and (min-width: 1240px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.user_name {
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  @media screen and (min-width: 1240px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.user-info{
+  display: flex;
+}
+.user_shoose {
+  line-height: 14px;
+  color: $second-text;
+  @media screen and (max-width: 1239px) {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+  @media screen and (min-width:1240px){
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 6px;
+  }
+}
+.task-list_item_content_text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 6px;
+  @media screen and (max-width: 1239px) {
+    flex-grow: 86px;
+  }
+  @media screen and (min-width:1240px){
+    flex-grow: 120px;
+    
+  }
+}
+.task-list_item_content_header {
+  display: flex;
+  flex-wrap: wrap;
+  
+  @media screen  and (max-width:1239px){
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  @media screen and (min-width:1240px){
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+}
+.perform_task_button {
+  border: none;
+  color: $text;
+  background-color: $bg-empty;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 500;
+  border: solid $accent 1px;
+  &:hover,
+  :focus {
+    background-color: $accent;
+  }
+  @media screen and (max-width: 1239px){
+    margin-top: 15px;
+    width: 146px;
+    height: 40px;
+  }
+  @media screen and (min-width:1240px){
+    margin-top: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+.buttom-up{
+  @media screen and (min-width: 1240px) {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  background: $bg-empty;
+  border-radius: 100%;
+  top: 90%;
+  right: 3%;
+  &:after {
+      content: '';
+      position: absolute;
+      background: url('../images/svg/Mask.svg') no-repeat;
+      background-position: center;
+      border-radius: 100%;
+      background-size: 60%;
+      width: 36px;
+      height: 36px;
+      display: block;
+      top: 12%;
+      right: 12%;
+    }
+  }
+}
+@import './task-list_after';
+@import './placaholderBlock';

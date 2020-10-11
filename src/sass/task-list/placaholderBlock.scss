@@ -1,0 +1,84 @@
+
+.task-list_item_logo_block_empty {
+    border-radius: 100%;
+    background-color: $bg-empty;
+    @media screen and (min-width: 320px) {
+      width: 30px;
+      height: 30px;
+    }
+    @media screen and (min-width:1240px){
+        width: 50px;
+        height: 50px;
+    }
+  }
+  .task-list_item_content_empty {
+    margin-left: 10px;
+  }
+  .task-list_item_content_header_empty{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+  }
+  .user_empty {
+    border-radius: 15px;
+    background-color: $bg-empty;
+    @media screen and (max-width: 1239px) {
+      width: 70px;
+      height: 12px;
+      &:last-child {
+        margin-top: 4px;
+      }
+    }
+    @media screen and (min-width: 1240px) {
+        width: 96px;
+        height: 18px;
+        &:last-child {
+          margin-top: 8px;
+        }
+      }
+  }
+  .user-img_empty {
+    border-radius: 15px;
+    width: 146px;
+    height: 105px;
+    background-color: $bg-empty;
+    @media screen and (min-width:1240px){
+        width: 250px;
+        height: 180px;
+        padding-top: 16%;
+    }
+  }
+  .placeholder {
+    margin: 0 auto;
+    display: flex;
+    width: 50px;
+    height: 105px;
+    fill: #343444;
+    @media screen and (min-width:1240px){
+        width: 100px;
+        height: 100px;
+    }
+  }
+  .buttom-emphy {
+    margin-top: 15px;
+    padding-top: 13px;
+    width: 146px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: $bg-empty;
+    @media screen and (min-width:1240px){
+        width: 250px;
+        height: 50px;
+    }
+  }
+  .buttom-emphy_bl {
+    margin: 0 auto;
+    width: 70px;
+    height: 15px;
+    border-radius: 15px;
+    background: #343444;
+    @media screen and (min-width:1240px){
+        width: 100px;
+        height: 20px;
+    }
+  }
